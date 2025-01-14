@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en Ligne</title>
+    <link rel="stylesheet" href="styles.CSS">
+    <script src="script2.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Site De Vente en ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="#search-form">Accueil</a></li>
+                <li><a href="#product-list">Voir les produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#connexion">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bienvenue dans notre boutique en ligne</h2>
+        <p>Découvrez nos produits et faites votre choix !</p>
+
+        <!-- Formulaire de recherche -->
+        <form id="search-form" onsubmit="searchProducts(event)">
+            <label for="search-name">Rechercher par nom :</label>
+            <input type="text" id="search-name" placeholder="Nom..." oninput="searchProducts(event)">
+
+            <label for="search-category">Rechercher par catégorie :</label>
+            <input type="text" id="search-category" placeholder="Catégorie..." oninput="searchProducts(event)">
+
+            <label for="search-reference">Rechercher par référence :</label>
+            <input type="text" id="search-reference" placeholder="Référence..." oninput="searchProducts(event)">
+            <!-- Bouton pour accéder à la section cible -->
+            <button onclick="window.location.hash = '#product-list'">Rechercher</button>
+
+        </form>
+
+        <section id="formulaires">
+            <!-- Formulaire d'inscription -->
+            <h2>Inscription</h2>
+            <form onsubmit="return validateSignupForm()"action="inscription_valide.html" method="get">
+                <label for="signup-name">Nom :</label>
+                <input type="text" id="signup-name" placeholder="Votre nom" required>
+                
+                <label for="signup-email">Email :</label>
+                <input type="email" id="signup-email" placeholder="Votre email" required>
+                
+                <label for="signup-phone">Numéro de téléphone :</label>
+                <input type="tel" id="signup-phone" placeholder="Votre téléphone" required>
+                
+                <label for="signup-password">Mot de passe :</label>
+                <input type="password" id="signup-password" placeholder="Votre mot de passe" required>
+                
+                <label for="signup-confirm-password">Confirmer le mot de passe :</label>
+                <input type="password" id="signup-confirm-password" placeholder="Confirmez votre mot de passe" required>
+                
+                <button type="submit">S'inscrire</button>
+            </form>
+
+            <!-- Formulaire de connexion -->
+            <h2 id="connexion">Connexion</h2>
+            <form onsubmit="return validateLoginForm()"action="connexion_valide.html" method="get">
+                <label for="login-email">Email :</label>
+                <input type="email" id="login-email" placeholder="Votre email" required>
+
+                <label for="login-password">Mot de passe :</label>
+                <input type="password" id="login-password" placeholder="Votre mot de passe" required>
+
+                <button type="submit">Se connecter</button>
+            </form>
+
+            <h2>Aide en cas d'oubli de mot de passe</h2>
+            <form onsubmit="return validatePasswordResetForm()"action="confirmation_reinitialisation.html" method="get">
+                <label for="reset-email">Email :</label>
+                <input type="email" id="reset-email" placeholder="Votre email" required>
+
+                <button type="submit">Réinitialiser le mot de passe</button>
+            </form>
+        </section>
+
+<section id="product-list">
+    <h2>Nos Produits</h2>
+    <!-- Produit 1 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/OIP%20(2).jpeg" alt="Produit 1">
+        <h3>Produit 1</h3>
+        <p>Catégorie: Maison</p>
+        <p>Référence: P003</p>
+        <p>Description: Ce produit est un accessoire indispensable pour embellir votre maison.</p>
+        <button onclick="window.location.hash = '#connexion'" >Ajouter au panier</button>
+    </div>
+    <!-- Produit 2 -->
+    <div class="product-item">
+        <img src="https://th.bing.com/th/id/OIP.m-PFFdEpfLHLa5xhSfRkJQHaDt?rs=1&pid=ImgDetMain" alt="Produit 2">
+        <h3>Produit 2</h3>
+        <p>Catégorie: Vetement</p>
+        <p>Référence: P002</p>
+        <p>Un vêtement élégant et confortable, parfait pour toutes les occasions.</p>
+        <button onclick="window.location.hash = '#connexion'" >Ajouter au panier</button>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/OIP.jpeg" alt="Produit 3">
+        <h3>Produit 3</h3>
+        <p>Catégorie: Maison</p>
+        <p>Référence: P003</p>
+        <p>Description: Ce produit est un accessoire indispensable pour embellir votre maison.</p>
+        <button onclick="window.location.hash = '#connexion'" >Ajouter au panier</button>
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/beaut%C3%A9.jpeg" alt="Produit 4">
+        <h3>Produit 4</h3>
+        <p>Catégorie: Beauté</p>
+        <p>Référence: P004</p>
+        <p>Description: Un soin de beauté haute qualité pour prendre soin de votre peau.</p>
+        <button onclick="window.location.hash = '#connexion'" >Ajouter au panier</button>
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/sport.jpeg" alt="Produit 5">
+        <h3>Produit 5</h3>
+        <p>Catégorie: Sport</p>
+        <p>Référence: P005</p>
+        <p>Description: Un équipement de sport de haute performance, idéal pour vos entraînements.</p>
+        <button onclick="window.location.hash = '#connexion'" >Ajouter au panier</button>
+    </div>
+
+    <!-- Produit 6 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/aliment.jpeg" alt="Produit 6">
+        <h3>Produit 6</h3>
+        <p>Catégorie: Alimentation</p>
+        <p>Référence: P006</p>
+        <p>Description: Un aliment bio et naturel, parfait pour vos recettes saines.</p>
+        <button onclick="window.location.hash = '#connexion'" >Ajouter au panier</button>
+    </div>
+</section>
+
+
+    <section id="contact">
+    <div class="contact-container">
+        <h2>Contactez-nous</h2>
+        <p>Nous sommes là pour répondre à vos questions. N'hésitez pas à nous contacter via le formulaire ci-dessous ou en utilisant les informations de contact directes.</p>
+        
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required placeholder="Entrez votre nom">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Écrivez votre message"></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        
+        <div class="contact-info">
+            <h3>Informations de contact</h3>
+            <ul>
+                <li><strong>Téléphone :</strong> +1 234 567 890</li>
+                <li><strong>Email :</strong> contact@monsite.com</li>
+                <li><strong>Adresse :</strong> 123 Rue Exemple, Gafsa, Tunisie</li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en Ligne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site De Vente en ligne </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#product-list">Voir les produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#connexion">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bienvenue dans notre boutique en ligne</h2>
+        <p>Découvrez nos produits et faites votre choix !</p>
+
+        <!-- Formulaire de recherche -->
+        <form id="search-form" oninput="searchProducts()">
+          <label for="search-form">Rechercher un produit :</label>
+            <input type="text" id="search-name" placeholder="Rechercher par nom..." oninput="searchProducts()">
+           <input type="text" id="search-category" placeholder="Rechercher par catégorie..." oninput="searchProducts()">
+           <input type="text" id="search-reference" placeholder="Rechercher par référence..." oninput="searchProducts()">
+          <button type="submit">Rechercher</button>
+        </form>
+
+        <section id="formulaires">
+            
+
+            <!-- Formulaire d'inscription -->
+            <h2>Inscription</h2>
+            <form onsubmit="return validateSignupForm()">
+                <label for="signup-name">Nom :</label>
+                <input type="text" id="signup-name" placeholder="Votre nom" required>
+                
+                <label for="signup-email">Email :</label>
+                <input type="email" id="signup-email" placeholder="Votre email" required>
+                
+                <label for="signup-phone">Numéro de téléphone :</label>
+                <input type="tel" id="signup-phone" placeholder="Votre téléphone" required>
+                
+                <label for="signup-password">Mot de passe :</label>
+                <input type="password" id="signup-password" placeholder="Votre mot de passe" required>
+                
+                <label for="signup-confirm-password">Confirmer le mot de passe :</label>
+                <input type="password" id="signup-confirm-password" placeholder="Confirmez votre mot de passe" required>
+                
+                <button type="submit">S'inscrire</button>
+            </form>
+
+            <!-- Formulaire de connexion -->
+            <h2 id="connexion">Connexion</h2>
+            <form onsubmit="return validateLoginForm()">
+                <label for="login-email">Email :</label>
+                <input type="email" id="login-email" placeholder="Votre email" required>
+
+                <label for="login-password">Mot de passe :</label>
+                <input type="password" id="login-password" placeholder="Votre mot de passe" required>
+
+                <button type="submit">Se connecter</button>
+            </form>
+
+            <h2>Aide en cas d'oubli de mot de passe</h2>
+            <form onsubmit="return validatePasswordResetForm()">
+                <label for="reset-email">Email :</label>
+                <input type="email" id="reset-email" placeholder="Votre email" required>
+
+                <button type="submit">Réinitialiser le mot de passe</button>
+            </form>
+            
+
+        </section>
+
+    <section id="product-list">
+    <h2>Nos Produits</h2>
+    <section id="product-list">
+
+
+    <!-- Produit 1 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/OIP%20(2).jpeg" alt="Produit 1">
+        <h3>Produit 1</h3>
+        <p>Catégorie: Électronique</p>
+        <p>Référence: P001</p>
+        <p>Description: Ce produit est un appareil électronique innovant, conçu pour faciliter votre quotidien.</p>
+        <button>Ajouter au Panier</button>
+    </div>
+
+    <!-- Produit 2 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42rfs93z8/%D9%81%D8%B3%D8%AA%D8%A7%D9%86%20%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D9%85%D8%AA%D9%88%D8%B3%D8%B7%20__%D8%A7%D9%84%D8%B7%D9%88%D9%84%20%D8%A8%D8%B7%D9%8A%D8%A7%D8%AA%20%D8%BA%D9%8A%D8%B1%20%D9%85%D8%AA%D9%85%D8%A7%D8%AB%D9%84%D8%A9%20%D9%88%D8%A3%D9%83%D9%85%D8%A7%D9%85%20%D8%A3%D9%88%D8%B1%D8%AC%D8%A7%D9%86%D8%B2%D8%A7%20%D9%81%D9%88%D8%A7%D9%84%20S_M_L%20%D8%A3%D8%B2%D8%B1%D9%82_%D9%88%D8%B1%D8%AF%D9%8A_%D8%A8%D9%8A%D8%AC%20%D9%83%D8%B1%D9%8A%D9%85%D9%8A%20MEAN%20BLVD.jpeg	" alt="Produit 2">
+        <h3>Produit 2</h3>
+        <p>Catégorie: Mode</p>
+        <p>Référence: P002</p>
+        <p>Description: Un vêtement élégant et confortable, parfait pour toutes les occasions.</p>
+        <button>Ajouter au Panier</button>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/maison.jpg	" alt="Produit 3">
+        <h3>Produit 3</h3>
+        <p>Catégorie: Maison</p>
+        <p>Référence: P003</p>
+        <p>Description: Ce produit est un accessoire indispensable pour embellir votre maison.</p>
+        <button>Ajouter au Panier</button>
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/beaut%C3%A9.jpeg	" alt="Produit 4">
+        <h3>Produit 4</h3>
+        <p>Catégorie: Beauté</p>
+        <p>Référence: P004</p>
+        <p>Description: Un soin de beauté haute qualité pour prendre soin de votre peau.</p>
+        <button>Ajouter au Panier</button>
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/sport.jpeg	" alt="Produit 5">
+        <h3>Produit 5</h3>
+        <p>Catégorie: Sport</p>
+        <p>Référence: P005</p>
+        <p>Description: Un équipement de sport de haute performance, idéal pour vos entraînements.</p>
+        <button>Ajouter au Panier</button>
+    </div>
+
+    <!-- Produit 6 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/aliment.jpeg	" alt="Produit 6">
+        <h3>Produit 6</h3>
+        <p>Catégorie: Alimentation</p>
+        <p>Référence: P006</p>
+        <p>Description: Un aliment bio et naturel, parfait pour vos recettes saines.</p>
+        <button>Ajouter au Panier</button>
+    </div>
+
+    </section>
+
+
+    </main>
+
+    <section id="contact">
+    <div class="contact-container">
+        <h2>Contactez-nous</h2>
+        <p>Nous sommes là pour répondre à vos questions. N'hésitez pas à nous contacter via le formulaire ci-dessous ou en utilisant les informations de contact directes.</p>
+        
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required placeholder="Entrez votre nom">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Écrivez votre message"></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        
+        <div class="contact-info">
+            <h3>Informations de contact</h3>
+            <ul>
+                <li><strong>Téléphone :</strong> +1 234 567 890</li>
+                <li><strong>Email :</strong> contact@votreentreprise.com</li>
+                <li><strong>Adresse :</strong> 123 Rue Exemple, Ville, Pays</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

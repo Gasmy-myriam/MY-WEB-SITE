@@ -1,0 +1,78 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal du formulaire */
+.form-container {
+    background-color: #fff;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bouton de soumission */
+.submit-btn {
+    background-color: #007BFF; /* Couleur de fond verte */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color:  #007BFF; /* Couleur verte plus foncée au survol */
+}
+
+/* Page de confirmation */
+.confirmation-container {
+    background-color: #fff;
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-container h1 {
+    color: #4A90E2 /* Couleur verte pour le titre */
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007BFF; /* Couleur bleue pour le bouton retour */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: #0056b3; /* Couleur bleue plus foncée au survol */
+}

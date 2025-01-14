@@ -1,0 +1,326 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    margin: 0;
+    background-color: #333; 
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #4A90E2; 
+    color: #fff; 
+}
+
+
+header h1 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase; 
+    background: linear-gradient(45deg, #4A90E2, #357ABD); 
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    letter-spacing: 2px; /* Espacement des lettres  */
+    text-align: center;
+}
+
+
+header h1:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+
+form#search-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form#search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form#search-form button {
+    padding: 8px 16px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form#search-form button:hover {
+    background-color: #357ABD;
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #357ABD;
+}
+
+
+#product-list {
+    margin: 20px;
+    text-align: center;
+}
+
+#product-list h2 {
+    font-size: 28px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+
+.product-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.product-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style pour les paragraphes (catégorie, référence, description) */
+.product-item p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Style pour les boutons */
+.product-item button {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #357ABD;
+}
+
+/* Style pour la section Contact */
+#contact {
+    background-color: #f4f7fc;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+#contact .contact-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 32px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.contact-form .form-group textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #357ABD;
+}
+
+/* Style pour les informations de contact */
+.contact-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li strong {
+    color: #4A90E2;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Aligner les éléments de la navigation sur les petits écrans */
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .product-item {
+        margin-bottom: 20px;
+    }
+}

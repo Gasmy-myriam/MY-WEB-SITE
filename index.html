@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en Ligne</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="script1.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Site De Vente en ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="#search-form">Accueil</a></li>
+                <li><a href="#product-list">Voir les produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tpind.html">Deconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bienvenue dans notre boutique en ligne</h2>
+        <p>Découvrez nos produits et faites votre choix !</p>
+
+        <!-- Formulaire de recherche -->
+        <form id="search-form" onsubmit="searchProducts(event)" >
+            <label for="search-name">Rechercher par nom :</label>
+            <input type="text" id="search-name" placeholder="Nom..." oninput="searchProducts(event)">
+
+            <label for="search-category">Rechercher par catégorie :</label>
+            <input type="text" id="search-category" placeholder="Catégorie..." oninput="searchProducts(event)">
+
+            <label for="search-reference">Rechercher par référence :</label>
+            <input type="text" id="search-reference" placeholder="Référence..." oninput="searchProducts(event)">
+            <!-- Bouton pour accéder à la section cible -->
+            <button onclick="window.location.hash = '#product-list'">Rechercher</button>
+
+        </form>
+            
+            
+
+<section id="product-list">
+    <h2>Nos Produits</h2>
+    <!-- Produit 1 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/OIP%20(2).jpeg" alt="Produit 1">
+        <h3>Produit 3</h3>
+        <p>Catégorie: Maison</p>
+        <p>Référence: P003</p>
+        <p>Description: Ce produit est un accessoire indispensable pour embellir votre maison.</p>
+        <button onclick="window.location.href='page_de_confirmation.html'" >Acheter</button>
+    </div>
+    <!-- Produit 2 -->
+    <div class="product-item">
+        <img src="https://th.bing.com/th/id/OIP.m-PFFdEpfLHLa5xhSfRkJQHaDt?rs=1&pid=ImgDetMain" alt="Produit 2">
+        <h3>Produit 2</h3>
+        <p>Catégorie: Vetement</p>
+        <p>Référence: P002</p>
+        <p>Un vêtement élégant et confortable, parfait pour toutes les occasions.</p>
+        <button onclick="window.location.href='page_de_confirmation.html'" >Acheter</button>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/OIP.jpeg" alt="Produit 3">
+        <h3>Produit 3</h3>
+        <p>Catégorie: Maison</p>
+        <p>Référence: P003</p>
+        <p>Description: Ce produit est un accessoire indispensable pour embellir votre maison.</p>
+        <button onclick="window.location.href='page_de_confirmation.html'" >Acheter</button>
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/beaut%C3%A9.jpeg" alt="Produit 4">
+        <h3>Produit 4</h3>
+        <p>Catégorie: Beauté</p>
+        <p>Référence: P004</p>
+        <p>Description: Un soin de beauté haute qualité pour prendre soin de votre peau.</p>
+        <button onclick="window.location.href='page_de_confirmation.html'" >Acheter</button>
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/sport.jpeg" alt="Produit 5">
+        <h3>Produit 5</h3>
+        <p>Catégorie: Sport</p>
+        <p>Référence: P005</p>
+        <p>Description: Un équipement de sport de haute performance, idéal pour vos entraînements.</p>
+        <button onclick="window.location.href='page_de_confirmation.html'" >Acheter</button>
+    </div>
+
+    <!-- Produit 6 -->
+    <div class="product-item">
+        <img src="https://assets.onecompiler.app/42rfs5nk9/42zgjkupq/aliment.jpeg" alt="Produit 6">
+        <h3>Produit 6</h3>
+        <p>Catégorie: Alimentation</p>
+        <p>Référence: P006</p>
+        <p>Description: Un aliment bio et naturel, parfait pour vos recettes saines.</p>
+        <button onclick="window.location.href='page_de_confirmation.html'" >Acheter</button>
+    </div>
+</section>
+
+
+    <section id="contact">
+    <div class="contact-container">
+        <h2>Contactez-nous</h2>
+        <p>Nous sommes là pour répondre à vos questions. N'hésitez pas à nous contacter via le formulaire ci-dessous ou en utilisant les informations de contact directes.</p>
+        
+      
+        <form action="contact.html" method="GET">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required placeholder="Entrez votre nom">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Écrivez votre message"></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        
+        <div class="contact-info">
+            <h3>Informations de contact</h3>
+            <ul>
+                <li><strong>Téléphone :</strong> +1 234 567 890</li>
+                <li><strong>Email :</strong> contact@monsite.com</li>
+                <li><strong>Adresse :</strong> 123 Rue Exemple, Gafsa, Tunisie</li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>
